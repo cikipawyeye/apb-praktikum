@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Layout App</string>
+    <string name="user1_name">Dwi Ratna</string>
+    <string name="user1_jurusan">Informatika</string>
+    <string name="user2_name">Ratna Sari</string>
+    <string name="user2_jurusan">Sistem Informasi</string>
+
 </resources>
