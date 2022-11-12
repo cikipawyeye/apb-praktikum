@@ -1,4 +1,4 @@
-package com.example.fragmenapplication;
+package com.example.fragmentapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -80,17 +80,21 @@ public class FragmentSatu extends Fragment {
         btnSendtoActivity = view.findViewById(R.id.btn_send_to_activity);
 
         // get message from activity
-        String pesan = getArguments().getString("key_pesan");
+        String pesan = "";
+        if (getArguments() != null) {
+            pesan = getArguments().getString("key_pesan");
+        }
         txtPesan.setText(pesan);
 
         // implement btn send to DetaiActivity
+        String finalPesan = pesan;
         btnSendtoActivity.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), DetailActivity.class);
 
-                intent.putExtra("key_pesan", pesan);
+                intent.putExtra("key_pesan", finalPesan);
                 getActivity().startActivity(intent);
             }
         });

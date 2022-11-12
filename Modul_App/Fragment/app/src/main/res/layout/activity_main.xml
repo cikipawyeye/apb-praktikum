@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:hint="Masukkan teks"
         android:inputType="text"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:autofillHints="Text" />
 
     <Button
         android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
         android:layout_margin="16dp"
         android:id="@+id/fragment_container"
         android:background="@color/teal_200"
-        android:name="com.example.fragmenapplication.FragmentSatu" />
+        android:name="com.example.fragmentapplication.FragmentSatu" />
 
 
 </LinearLayout>
